@@ -1,0 +1,40 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "John Gehl",
+    "longName": "GOAL",
+    "resources": {
+        "media": [
+            {
+                "file": "images/soccer goal.png",
+                "name": "GOAL",
+                "type": "png-trans"
+            },
+            {
+                "file": "images/RTABrXqTL (2).png",
+                "name": "BALL",
+                "type": "png"
+            },
+            {
+                "file": "fonts/Signika-Semibold.ttf",
+                "name": "MAIN_45",
+                "type": "font"
+            },
+            {
+                "file": "images/pebblelogo.png",
+                "menuIcon": true,
+                "name": "LOGO",
+                "type": "png"
+            }
+        ]
+    },
+    "shortName": "GOAL",
+    "uuid": "5f587eb2-f1e3-467b-90f4-481c9d2452e1",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
