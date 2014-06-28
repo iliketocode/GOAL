@@ -106,6 +106,7 @@ void window_load(Window *window)
   layer_add_child(window_get_root_layer(window), bitmap_layer_get_layer(ball_layer));
   //fonts
   ResHandle font_main = resource_get_handle(RESOURCE_ID_MAIN_45);
+  ResHandle font_goal = resource_get_handle(RESOURCE_ID_GOAL17);
 
 
   
@@ -123,11 +124,11 @@ void window_load(Window *window)
   text_layer_set_background_color(text_layer_goal, GColorClear);
   text_layer_set_text_color(text_layer_goal, GColorBlack);
 	text_layer_set_text_alignment(text_layer_goal, GTextAlignmentCenter);
-  text_layer_set_font(text_layer_goal, fonts_load_custom_font(font_main));
-  
-  layer_add_child(window_get_root_layer(window), (Layer*) text_layer_goal);
+  text_layer_set_font(text_layer_goal, fonts_load_custom_font(font_goal));
 
-  text_layer_set_text(text_layer_goal, "");
+  layer_add_child(window_get_root_layer(window), (Layer*) text_layer_goal);
+  text_layer_set_text(text_layer_goal,"i belive that we are going to win");
+
 	//Inverter layer
 	inv_layer = inverter_layer_create(GRect(0, 50, 144, 62));
 	layer_add_child(window_get_root_layer(window), (Layer*) inv_layer);
@@ -137,7 +138,6 @@ void window_load(Window *window)
 	time_t temp;	
 	temp = time(NULL);	
 	t = localtime(&temp);	
-	text_layer_set_text(text_layer_goal, "i believe");
 	//Manually call the tick handler when the window is loading
 	tick_handler(t, MINUTE_UNIT);
 }
