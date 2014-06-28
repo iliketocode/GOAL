@@ -127,7 +127,7 @@ void window_load(Window *window)
   text_layer_set_font(text_layer_goal, fonts_load_custom_font(font_goal));
 
   layer_add_child(window_get_root_layer(window), (Layer*) text_layer_goal);
-  text_layer_set_text(text_layer_goal,"i belive that we will win");
+  text_layer_set_text(text_layer_goal,"i believe that \n we will win!");
 
 	//Inverter layer
 	inv_layer = inverter_layer_create(GRect(0, 50, 144, 62));
